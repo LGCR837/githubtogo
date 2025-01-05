@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Github To Go",
+  "version": "1.0",
+  "description": "自动将 github.com 重定向到 bgithub.xyz",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://github.com/*",
+    "*://www.github.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+} 
