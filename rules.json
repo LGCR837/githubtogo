@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "bgithub.xyz"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||github.com",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+] 
